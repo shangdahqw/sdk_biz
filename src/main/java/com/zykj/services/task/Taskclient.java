@@ -25,18 +25,18 @@ public class Taskclient {
     /**
      * 上传文件
      * @param type
-     * @param project_id
+     * @param projectId
      * @param token
      * @param file
      * @return
      */
 
-    public ResponseData<Task> create_dataset_from_file(String type, String project_id, String token,File file){
+    public ResponseData<Task> createDatasetFromFile(String type, String projectId, String token,File file){
 
         String responsebody = "";
 
         try {
-            responsebody = HttpUtil.requestPostBySynWithFormData(UPLOAD_URL,type,project_id,token,file);
+            responsebody = HttpUtil.requestPostBySynWithFormData(UPLOAD_URL,type,projectId,token,file);
 
             System.out.println(responsebody);
         } catch (IOException e) {
@@ -52,14 +52,14 @@ public class Taskclient {
 
     /**
      * 画像
-     * @param project_id
+     * @param projectId
      * @param token
      * @return
      */
-    public ResponseData<Task> protrait(String project_id, String token){
+    public ResponseData<Task> protrait(String projectId, String token){
 
         HashMap<String ,Object > paramap =new HashMap<String,Object>();
-        paramap.put("project_id",project_id);
+        paramap.put("projectId",projectId);
 
         String responsebody = "";
 
@@ -79,18 +79,18 @@ public class Taskclient {
 
     /**
      * 自动训练
-     * @param feature_list_id
-     * @param project_id
-     * @param target_feature_id
+     * @param featureListId
+     * @param projectId
+     * @param targetFeatureId
      * @param token
      * @return
      */
-    public ResponseData<Task> aotu_train(String feature_list_id,String project_id,
-                                         String target_feature_id,String token ){
+    public ResponseData<Task> aotuTrain(String featureListId,String projectId,
+                                         String targetFeatureId,String token ){
 
-//        String requestjson ="{\"feature_list_id\": "+feature_list_id+
-//                ", \"project_id\": "+project_id+
-//                ", \"target_feature_id\": " +target_feature_id+
+//        String requestjson ="{\"featureListId\": "+featureListId+
+//                ", \"projectId\": "+projectId+
+//                ", \"targetFeatureId\": " +targetFeatureId+
 //                ",\"config\":{\"split_method\":1,\"cross_valid_fold\":2,\"test_ratio\":20}}";
 
         HashMap<String ,Object > paramap =new HashMap<String,Object>();
@@ -101,9 +101,9 @@ public class Taskclient {
         paramap2.put("cross_valid_fold",2);
         paramap2.put("test_ratio",3);
 
-        paramap.put("feature_list_id",feature_list_id);
-        paramap.put("project_id",project_id);
-        paramap.put("target_feature_id",target_feature_id);
+        paramap.put("featureListId",featureListId);
+        paramap.put("projectId",projectId);
+        paramap.put("targetFeatureId",targetFeatureId);
         paramap.put("config",paramap2);
 
         String responsebody = "";

@@ -21,28 +21,29 @@ public class Project {
 
 
 
-    String  project_id;
-    String user_id;
+    String  projectId;
+    String userId;
     String name;
     String desc;
-    String created_at;
-    String train_dataset_name;
-    String train_dataset_size;
+    String createdAt;
+    String trainDatasetName;
+    String trainDatasetSize;
 
-    public String getProject_id() {
-        return project_id;
+
+    public String getProjectId() {
+        return projectId;
     }
 
-    public void setProject_id(String project_id) {
-        this.project_id = project_id;
+    public void setProjectId(String projectId) {
+        this.projectId = projectId;
     }
 
-    public String getUser_id() {
-        return user_id;
+    public String getUserId() {
+        return userId;
     }
 
-    public void setUser_id(String user_id) {
-        this.user_id = user_id;
+    public void setUserId(String userId) {
+        this.userId = userId;
     }
 
     public String getName() {
@@ -61,42 +62,42 @@ public class Project {
         this.desc = desc;
     }
 
-    public String getCreated_at() {
-        return created_at;
+    public String getCreatedAt() {
+        return createdAt;
     }
 
-    public void setCreated_at(String created_at) {
-        this.created_at = created_at;
+    public void setCreatedAt(String createdAt) {
+        this.createdAt = createdAt;
     }
 
-    public String getTrain_dataset_name() {
-        return train_dataset_name;
+    public String getTrainDatasetName() {
+        return trainDatasetName;
     }
 
-    public void setTrain_dataset_name(String train_dataset_name) {
-        this.train_dataset_name = train_dataset_name;
+    public void setTrainDatasetName(String trainDatasetName) {
+        this.trainDatasetName = trainDatasetName;
     }
 
-    public String getTrain_dataset_size() {
-        return train_dataset_size;
+    public String getTrainDatasetSize() {
+        return trainDatasetSize;
     }
 
-    public void setTrain_dataset_size(String train_dataset_size) {
-        this.train_dataset_size = train_dataset_size;
+    public void setTrainDatasetSize(String trainDatasetSize) {
+        this.trainDatasetSize = trainDatasetSize;
     }
-
 
 
     @Override
     public String toString() {
         return "Project{" +
-                "project_id='" + project_id + '\'' +
-                ", user_id='" + user_id + '\'' +
+                "projectId='" + projectId + '\'' +
+                ", userId='" + userId + '\'' +
                 ", name='" + name + '\'' +
                 ", desc='" + desc + '\'' +
-                ", created_at='" + created_at + '\'' +
-                ", train_dataset_name='" + train_dataset_name + '\'' +
-                ", train_dataset_size='" + train_dataset_size + '\'' +
+                ", createdAt='" + createdAt + '\'' +
+                ", trainDatasetName='" + trainDatasetName + '\'' +
+                ", trainDatasetSize='" + trainDatasetSize + '\'' +
                 '}';
     }
+
 }

@@ -16,15 +16,15 @@ public class Onlinepredictclient {
     /**
      * 发布
      * @param lazy
-     * @param model_id
+     * @param modelId
      * @param token
      * @return
      */
-    public ResponseData<Onlinepredict> publish(boolean lazy, long model_id, String token){
+    public ResponseData<Onlinepredict> publish(boolean lazy, long modelId, String token){
 
         HashMap<String ,Object > paramap =new HashMap<String,Object>();
         paramap.put("lazy",lazy);
-        paramap.put("model_id",model_id);
+        paramap.put("modelId",modelId);
 
         String responsebody = "";
 

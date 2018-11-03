@@ -31,45 +31,45 @@ import java.util.List;
  */
 public class Task {
 
-    String  task_id;
-    String project_id;
-    String dataset_id;
+    String taskId;
+    String projectId;
+    String datasetId;
     String type;
     String status;
-    String failed_reason;
-    String failed_error;
+    String failedReason;
+    String failedError;
     String percentage;
-    String  duration;
-    List stages;
-    String dataset_info;
-    String preprocess_info;
-    String train_info;
-    String predict_info;
-    String next_task;
+    String duration;
+    List   stages;
+    String datasetInfo;
+    String preprocessInfo;
+    String trainInfo;
+    String predictInfo;
+    String nextTask;
 
 
-    public String getTask_id() {
-        return task_id;
+    public String getTaskId() {
+        return taskId;
     }
 
-    public void setTask_id(String task_id) {
-        this.task_id = task_id;
+    public void setTaskId(String taskId) {
+        this.taskId = taskId;
     }
 
-    public String getProject_id() {
-        return project_id;
+    public String getProjectId() {
+        return projectId;
     }
 
-    public void setProject_id(String project_id) {
-        this.project_id = project_id;
+    public void setProjectId(String projectId) {
+        this.projectId = projectId;
     }
 
-    public String getDataset_id() {
-        return dataset_id;
+    public String getDatasetId() {
+        return datasetId;
     }
 
-    public void setDataset_id(String dataset_id) {
-        this.dataset_id = dataset_id;
+    public void setDatasetId(String datasetId) {
+        this.datasetId = datasetId;
     }
 
     public String getType() {
@@ -88,20 +88,20 @@ public class Task {
         this.status = status;
     }
 
-    public String getFailed_reason() {
-        return failed_reason;
+    public String getFailedReason() {
+        return failedReason;
     }
 
-    public void setFailed_reason(String failed_reason) {
-        this.failed_reason = failed_reason;
+    public void setFailedReason(String failedReason) {
+        this.failedReason = failedReason;
     }
 
-    public String getFailed_error() {
-        return failed_error;
+    public String getFailedError() {
+        return failedError;
     }
 
-    public void setFailed_error(String failed_error) {
-        this.failed_error = failed_error;
+    public void setFailedError(String failedError) {
+        this.failedError = failedError;
     }
 
     public String getPercentage() {
@@ -128,65 +128,66 @@ public class Task {
         this.stages = stages;
     }
 
-    public String getDataset_info() {
-        return dataset_info;
+    public String getDatasetInfo() {
+        return datasetInfo;
     }
 
-    public void setDataset_info(String dataset_info) {
-        this.dataset_info = dataset_info;
+    public void setDatasetInfo(String datasetInfo) {
+        this.datasetInfo = datasetInfo;
     }
 
-    public String getPreprocess_info() {
-        return preprocess_info;
+    public String getPreprocessInfo() {
+        return preprocessInfo;
     }
 
-    public void setPreprocess_info(String preprocess_info) {
-        this.preprocess_info = preprocess_info;
+    public void setPreprocessInfo(String preprocessInfo) {
+        this.preprocessInfo = preprocessInfo;
     }
 
-    public String getTrain_info() {
-        return train_info;
+    public String getTrainInfo() {
+        return trainInfo;
     }
 
-    public void setTrain_info(String train_info) {
-        this.train_info = train_info;
+    public void setTrainInfo(String trainInfo) {
+        this.trainInfo = trainInfo;
     }
 
-    public String getPredict_info() {
-        return predict_info;
+    public String getPredictInfo() {
+        return predictInfo;
     }
 
-    public void setPredict_info(String predict_info) {
-        this.predict_info = predict_info;
+    public void setPredictInfo(String predictInfo) {
+        this.predictInfo = predictInfo;
     }
 
-    public String getNext_task() {
-        return next_task;
+    public String getNextTask() {
+        return nextTask;
     }
 
-    public void setNext_task(String next_task) {
-        this.next_task = next_task;
+    public void setNextTask(String nextTask) {
+        this.nextTask = nextTask;
     }
 
 
     @Override
     public String toString() {
         return "Task{" +
-                "task_id='" + task_id + '\'' +
-                ", project_id='" + project_id + '\'' +
-                ", dataset_id='" + dataset_id + '\'' +
+                "taskId='" + taskId + '\'' +
+                ", projectId='" + projectId + '\'' +
+                ", datasetId='" + datasetId + '\'' +
                 ", type='" + type + '\'' +
                 ", status='" + status + '\'' +
-                ", failed_reason='" + failed_reason + '\'' +
-                ", failed_error='" + failed_error + '\'' +
+                ", failedReason='" + failedReason + '\'' +
+                ", failedError='" + failedError + '\'' +
                 ", percentage='" + percentage + '\'' +
                 ", duration='" + duration + '\'' +
                 ", stages=" + stages +
-                ", dataset_info='" + dataset_info + '\'' +
-                ", preprocess_info='" + preprocess_info + '\'' +
-                ", train_info='" + train_info + '\'' +
-                ", predict_info='" + predict_info + '\'' +
-                ", next_task='" + next_task + '\'' +
+                ", datasetInfo='" + datasetInfo + '\'' +
+                ", preprocessInfo='" + preprocessInfo + '\'' +
+                ", trainInfo='" + trainInfo + '\'' +
+                ", predictInfo='" + predictInfo + '\'' +
+                ", nextTask='" + nextTask + '\'' +
                 '}';
     }
+
 }

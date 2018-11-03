@@ -11,7 +11,7 @@ public class Projectclient {
 
 
 
-    private static  final String  CREATE_URL="http://s0.ebrain.ai:58095/api/v1/projects/create";
+    private static final String  CREATE_URL="http://s0.ebrain.ai:58095/api/v1/projects/create";
 
 
     /**
@@ -49,24 +49,3 @@ public class Projectclient {
 }
 
 
-
-
-
-
-
-
-//        HttpUtil.sendPostRequest_asyn(CREATE_URL,requestbody,token,new Callback(){
-//
-//            @Override
-//            public void onResponse(Call call, Response response) throws IOException {
-//                //得到服务器返回的具体内容
-//                String responseData =response.body().string();
-//
-//                System.out.println(responseData);
-//
-//            }
-//            @Override
-//            public void onFailure(Call call,IOException e){
-//                //在这里进行异常情况处理
-//            }
-//        });
